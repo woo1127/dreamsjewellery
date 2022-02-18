@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="dist/css/splide.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+
+                <li class="splide__slide">
+                    <div class="card">
+                        <div class="card-image-frame">
+                            <img src="../../image_origin/bracelet/1.jpg" alt="" class='card-image'>
+                            <div class="card-overlay">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card-title">916 Gold Bracelet</div>
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div class="card">
+                        <div class="card-image-frame">
+                            <img src="../../image_origin/bracelet/1.jpg" alt="" class='card-image'>
+                            <div class="card-overlay">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card-title">916 Gold Bracelet</div>
+                    </div>   
+                </li>
+
+                <li class="splide__slide">
+                    <div class="card">
+                        <div class="card-image-frame">
+                            <img src="../../image_origin/bracelet/1.jpg" alt="" class='card-image'>
+                            <div class="card-overlay">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card-title">916 Gold Bracelet</div>
+                    </div>       
+                </li>
+
+                <li class="splide__slide">
+                    <div class="card">
+                        <div class="card-image-frame">
+                            <img src="../../image_origin/bracelet/1.jpg" alt="" class='card-image'>
+                            <div class="card-overlay">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card-title">916 Gold Bracelet</div>
+                    </div>       
+                </li>
+            </ul>
+        </div>
+      </div>
+
+    <script src="dist/js/splide.min.js"></script>
+    <script src="dist-grid/js/splide-extension-grid.min.js"></script>
+    <script>
+        var splides = new Splide( '.splide', {
+            type: 'loop',
+            perPage: 2,
+            perMove: 1,
+            grid: {
+                rows: 2,
+                columns: 2,
+            },
+        });
+
+        splides.mount( window.splide.Extensions );
+    </script>
+</body>
+</html>
